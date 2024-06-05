@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+}
+body {
+  margin: 10px;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#main {
+  width: 1200px;
+  height: 700px;
+}
+#header {
+  width: 1200px;
+  height: 100px;
+  display: flex;
+}
+.logo {
+  width: 20%;
+  height: 100px;
+}
+.logo img {
+  width: 100%;
+  height: 100px;
+}
+.nav {
+  width: 80%;
+  height: 100px;
+  font-size: 22px;
+}
+.nav > ul {
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.nav > ul > li {
+  width: 200px;
+}
+.nav > ul > li > a {
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  height: 20px;
+  padding: 15px;
+}
+.nav > ul > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav > ul > li > ul > li {
+  text-align: center;
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+  background-color: rgba(165, 42, 42, 0.8);
+}
+.nav > ul > li > ul > li:hover {
+  background-color: yellowgreen;
+}
+#slider {
+  width: 1200px;
+  height: 300px;
+
+  overflow: hidden;
+}
+.slide {
+  width: 300%;
+  height: 300px;
+  z-index: -1000;
+}
+.slimg {
+  position: relative;
+  float: left;
+  z-index: -1000;
+}
+.slimg img {
+  width: 1200px;
+  height: 300px;
+
+  z-index: -1000;
+}
+.slimg p {
+  position: absolute;
+  font-size: 36px;
+  text-align: center;
+  top: 50%;
+  color: white;
+  font-weight: bold;
+
+  line-height: 160%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.slimg span {
+  color: yellow;
+  text-shadow: 4px 4px 4px red;
+}
+#contents {
+  width: 1200px;
+  height: 200px;
+  display: flex;
+}
+.conl {
+  width: 40%;
+  height: 100%;
+}
+.conl span {
+  color: rgb(33, 224, 78);
+}
+table {
+  border-spacing: 5px 1px;
+  font-size: 16px;
+}
+tr:not(:first-child):hover {
+  background-color: gray;
+}
+.conc {
+  width: 35%;
+  height: 100%;
+  display: flex;
+}
+.conc span {
+  color: rgb(33, 224, 78);
+}
+.gall {
+  width: 100%;
+  height: 100%;
+}
+.gall img {
+  width: 30%;
+  height: 60%;
+}
+.conr {
+  width: 25%;
+  height: 200px;
+  position: relative;
+}
+.conr img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.conr p {
+  position: absolute;
+  z-index: 1000;
+  text-align: center;
+  top: 20%;
+  font-weight: bold;
+  left: 10%;
+}
+#footer {
+  width: 1200px;
+  height: 100px;
+  display: flex;
+  background-color: thistle;
+}
+.footl {
+  margin-left: 10px;
+  width: 70%;
+  color: white;
+  font-size: 14px;
+}
+.footr {
+  width: 30%;
+  color: white;
+}
+.footr select {
+  width: 150px;
+  height: 20px;
+}
+#pop {
+  width: 500px;
+
+  text-align: center;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 10000;
+  left: 20%;
+  position: fixed;
+  bottom: 60%;
+  color: white;
+  display: none;
+}
+#pop p {
+  background-color: rgba(165, 42, 42, 0.4);
+}
+#pop button {
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+}
